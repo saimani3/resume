@@ -1,0 +1,84 @@
+
+/* Skills.css */
+
+.skills {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+  }
+  .skillsheading{
+    background-color: #777;
+    width: auto;
+    height: 70px;
+    /* margin-top: 10px; */
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill {
+    width: 250px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    
+  }
+  
+  .skill:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skill-info {
+    padding: 15px;
+  }
+  
+  .skill-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .percentage-label {
+    font-size: 18px;
+    color: #777;
+    margin-left: 10px;
+  }
+  
+  .percentage-bar {
+    height: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .percentage-fill {
+    height: 100%;
+    width: 0;
+    background-color: #007bff; /* Change the color as desired */
+    transition: width 1s ease-in-out;
+  }
+    
+
+
+
+
+/* Mobile View Styles */
+@media (max-width: 500px) {
+    /* .skill {
+      width: 100%;
+      margin: 0 0 20px 0;
+    } */
+    .skills{
+        
+    }
+  }

@@ -1,0 +1,31 @@
+.container-about{
+    height: 70vh;
+    margin: 0px;
+}
+.about-text{
+    font-size: x-large;
+    text-align:justify;
+    margin: 70px 50px 0px 50px;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width:500px) {
+
+    .about-text{
+        font-size: small;
+        text-align:justify;
+        margin: 30px 10px 0px 10px;
+
+    }
+
+
+}
+@media only screen and (min-width:501px) and (max-width:768px) {
+    .about-text{
+        font-size: larger;
+        text-align:justify;
+        margin: 30px 10px 0px 10px;
+
+    }
+
+}

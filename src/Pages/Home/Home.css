@@ -1,0 +1,76 @@
+.container1_homepage{
+    width: 100%;
+    height: 90vh;
+    padding:  8px 0;
+    background-color: rgba(0, 0, 0, 0.38);
+    color: #FDFDFD !important;
+}
+
+.profile_photo{
+    width: 10rem;
+    border-radius: 60%;
+    border: 2px solid rgb(142, 74, 74);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0%;
+    /* margin: 70px 0px 0px 44% ; */
+    margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+      display: block;
+    }
+ .container-parlex {
+    padding-top: 0px;
+    background-image: url('../../Assests/images/bgimage.jpg');
+    background-color: aliceblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+  /*  .parlex-back {
+    padding: 30px 0;
+    background-color: rgba(0, 0, 0, 0.37);
+    color: #FDFDFD !important;
+    } */
+
+.profile_name{
+    text-align: center;
+    /* justify-content: center; */
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: #c8f7f2;
+}
+.profile_role{
+    text-align: center;
+    font-size: smaller;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.scroll-up-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .scroll-up-button.visible {
+    display: flex; /* Display when isVisible is true */
+  }
+  
+  .scroll-up-button:hover {
+    /* background-color: #0056b3; */
+    transform: scale(1.1);
+  }
+  
