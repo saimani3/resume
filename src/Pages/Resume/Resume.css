@@ -6,157 +6,87 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-/* .container_resume{
-    display: flex;
-} */
-.container1_education{
-    width: 50%;
-    background-color: aqua;
-    float: left;
-    margin: auto 0.2rem;
-    margin-top: 10px;
-    height: auto;
-}
-.container2_experience{
-    width: 48%;
-    background-color: aquamarine;
-    float: right;
-    height: auto;
-    margin-top: 10px;
-}
-.education_title,
-.experience_title{
-    font-size: larger;
-    font-weight: bolder;
-    font-style: oblique;
-    text-align: center;
-}
-.eduction_line{
+.resume-container {
+    font-family: 'Arial', sans-serif;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    padding: 20px;
+    position: relative; /* Added position relative for positioning vertical lines */
+    animation: fadeIn 1s ease-in-out; /* Fade in animation */
+  }
+  
+  .education-section {
+    background-color: #d9f2d9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    position: relative; /* Added position relative for positioning vertical lines */
+  }
+  
+  .experience-section {
+    background-color: #f2d9d9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    position: relative; /* Added position relative for positioning vertical lines */
+  }
+  
+  .vertical-line {
     position: absolute;
-    width: 0.5rem;
-    background-color: white;
-    height: 24rem;
-    margin-left: 9%;
-}
-.experience_line{
-    position: absolute;
-    width: 0.5rem;
-    background-color: white;
-    height: 24rem;
-    margin-left: 13%;
-}
-.Circle_line{
-    display: flex;
-    background-color: black;
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-
-}
-.education_year{
-    margin-left: 40px;
-}
-.education_year b{
-    margin-left: 20px;
-}
-.education_name,
-.education_place,
-.education_marks{
-    margin-left: 140px;
-    font-size: smaller;
-
-}
-.experience_year{
-    margin-left: 10px;
-}
-.experience_year b{
-    margin-left: 30px;
-}
-.experience_role,
-.experience_skill{
-   margin-left: 180px;
-}
-
-.experience_about{
-    margin-left: 180px;
-    text-align: justify;
-    font-size:smaller;
-    margin-right: 10px;
-}
-
-.container_skills{
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-.skills_title{
-    width: 100%;
-    height: 100px;
-    background-color:rgb(124, 157, 186);
-    text-align: center;
-    color: aliceblue;
-   
-}
-
-@media only screen and (max-width:500px) {
-
-.container1_education{
-    width: 100%;
-    float: none;
-}
-.container2_experience{
-    width: 100%;
-    float: none;
-}
-.experience_year{
-    margin-left: 50px;
-}
-.experience_year b{
-    margin-left: 0px;
-}
-.experience_role,
-.experience_skill{
-   margin-left: 50px;
-}
-
-.experience_about{
-    margin-left: 50px;
-    text-align: justify;
-    font-size: smaller;
-    margin-right: 10px;
-}
-.experience_line,
-    .eduction_line{
-        margin-left: 5%;
+    height: 100%;
+    width: 2px;
+    background-color: #ccc; /* Color of the vertical lines */
+    left: 50%; /* Position the line in the center */
+    transform: translateX(-50%); /* Center the line */
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    animation: fadeInUp 0.5s ease-in-out; /* Fade in and slide up animation */
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
     }
-
-}
-
-@media only screen and (min-width:501px) and (max-width:820px) {
-
-   
-    .experience_year{
-        margin-left: 40px;
+    to {
+      opacity: 1;
     }
-    .experience_year b{
-        margin-left: 0px;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
     }
-    .experience_role,
-    .experience_skill{
-       margin-left: 40px;
+    to {
+      transform: translateY(0);
+      opacity: 1;
     }
-    
-    .experience_about{
-        margin-left: 40px;
-        text-align: justify;
-        font-size: smaller;
-        margin-right: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 600px) {
+    .resume-container {
+      max-width: 100%;
     }
-    .experience_line,
-    .eduction_line{
-        margin-left: 2%;
-    }
-    
-
-}
-
+  }
+        
