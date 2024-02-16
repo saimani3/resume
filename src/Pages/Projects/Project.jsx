@@ -4,6 +4,7 @@ import hospital from '../../Assests/images/hospital.png'
 import review from '../../Assests/images/reviews.png'
 import youtubeclone from '../../Assests/images/youtubeclone.png'
 import ecommerces from '../../Assests/images/ecommerces.png'
+import Tour from '../../Assests/images/tourimage.png'
 const Project = () => {
   return (
     <div className="projects">
@@ -66,6 +67,19 @@ const Project = () => {
       </p>
       <p><b>Example Output Image</b></p>
       <img src={ecommerces} alt='ecommerces' className='project_images'/>
+    </div>
+    <div className="project-card">
+      <h3>Near Tours</h3>
+      <p><b>Software Used:</b>REACTJS,NODEJS,MONGODB</p>
+      <p>
+      Our Mission :
+     At Sai Tours, our mission is to make your journey memorable and hassle-free. We strive to offer personalized and unforgettable travel experiences tailored to your preferences.
+      Our Vision :
+       We envision a world where travel brings people together, creates lasting memories, and fosters cultural understanding and appreciation.<br/>
+       Live Demo : <link href='https://neartourist.netlify.app/'/>
+      </p>
+      <p><b>Example Output Image</b></p>
+      <img src={Tour} alt='Tourimage' className='project_images'/>
     </div>
   </div>
   )
