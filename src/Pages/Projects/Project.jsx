@@ -76,7 +76,7 @@ const Project = () => {
      At Sai Tours, our mission is to make your journey memorable and hassle-free. We strive to offer personalized and unforgettable travel experiences tailored to your preferences.
       Our Vision :
        We envision a world where travel brings people together, creates lasting memories, and fosters cultural understanding and appreciation.<br/>
-       Live Demo : <link href='https://neartourist.netlify.app/'/>
+       Live Demo : <a href='https://neartourist.netlify.app/'>Web hosting</a>
       </p>
       <p><b>Example Output Image</b></p>
       <img src={Tour} alt='Tourimage' className='project_images'/>
